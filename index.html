@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title>Governança e Gestão de Dados: O que eu Cientista/Engenheiro de Dados tenho a ver com isso?| Caroline Dantas </title>
+    <meta name="description" content="Palestra apresentada no Caipyra - 2019 " />
+    <meta name="author" content="Caroline Dantas" />
+    <link href="css/caipyra_2019.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="2000">
+
+
+    <div id="overview" class="step overview" data-x="-135" data-y="-100" data-z="-100" data-scale="4" data-rotate="25">
+         <h3>Governança e Gestão de Dados: O que eu Cientista/Engenheiro de Dados tenho a ver com isso?</h3>
+    </div>
+
+    <div id="step-1" class="step" data-x="0" data-y="0" data-z="0" data-goto-prev="overview">
+        <h3>Caroline Dantas</h3>
+        <ul>
+            <li>Cientista de Dados</li>
+            <li>Graduanda em Ciência e Tecnologia na Universidade Federal do ABC</li>
+        </ul>
+    </div>
+
+    <div id="step-2" class="step" data-x="-1000" data-y="1000" data-z="-6000" data-rotate="20" >
+        <h3>Dado</h3>
+        <ul>
+            <li>Ativo mais importante das empresas</li>
+            <li>Não tem muita utilidade sem o devido tratamento</li>
+            <li>Não nos diz nada sem a devida contextualização</li>
+        </ul>
+    </div>
+
+    <div id="step-3" class="step" data-x="580" data-y="-550" data-z="350"  >
+        <h3>Informação</h3>
+        <ul>
+            <li>Dado devidamente tratado</li>
+            <li>Provoca uma transformação no conhecimento</li>
+        </ul>
+    </div>
+
+    <div id="step-4" class="step" data-x="1000" data-y="-1050" data-z="-1000" >
+        <h2>MAS TUDO COMEÇA NO DADO</h2>
+        <p><strong>Gestão de Dados</strong>: Pois são eles que <i>iniciam</i> a nossa esteira em busca do conhecimento necessário</p>
+    </div>
+
+    <div id="step-5" class="step" data-x="-55" data-y="-950" data-z="30" >
+        <h3>Depois de adquirir o conhecimento</h3><br>
+        <p>O que resta é saber como utilizá-lo coerentemente</p>
+    </div>
+
+    <div id="step-6" class="step" data-x="-500" data-y="550" data-z="4"  >
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/timeline.js"></script>
+        <div id="timeline_loka" style="width=750px; height: 700px;">
+            <input id="em" type="range" min="0.3" max="2" step="0.01" value="1" />
+            <script>
+
+                    Highcharts.chart('timeline_loka', {
+                  chart: {
+                    backgroundColor:'#FCFFC5',
+                    type: 'timeline'
+                  },
+                  xAxis: {
+                    visible: false
+                  },
+                  yAxis: {
+                    visible: false
+                  },
+                  title: {
+                    text: 'Da Administração à Gestão de Dados'
+                  },
+                  subtitle: {
+                    text: 'Fonte Bibliográfica: Lopes, Bergson Rêgo. Gestão e Governança de Dados.Promovendo dados como ativo de valor nas empresas'
+                  },
+                  colors: [
+                    '#4185F3',
+                    '#427CDD',
+                    '#406AB2',
+                    '#3E5A8E',
+                    '#3B4A68',
+                    '#363C46'
+                  ],
+                  series: [{
+                    data: [{
+                      name: 'Inicio',
+                      label: '1980: Consolidação dos Bancos Relacionais no Mercado Brasileiro',
+                      description: 'Surge a necessidade de uma perfil intermediário: Administrador de Dados'
+                    }, {
+                      name: 'Consolidação',
+                      label: '1990: Administração de Dados como função tática e não estratégica',
+                      description: 'Dados como ativo de grande valor já era mapeada, a implantação de áreas de administração de dados foi rápida'
+                    }, {
+                      name: 'Todo carnaval tem seu fim',
+                      label: '2000: A queda dos Administradores de Dados',
+                      description: 'A excassez de bons profissionais no mercado e o surgimentos de ERPs e CRMs foi fatal para a área'
+                    }, {
+                      name: 'Nem tudo estava perdido',
+                      label: '2010: A ressureição da Gestão de Dados',
+                      description: 'Redundância dos dados, Big Data e necessidade de tomadas de decisões rápidas e eficientes'
+                    }]
+                  }]
+                });
+
+                $('#em').on('input', function () {
+                    chart.timeline_loka.style.fontSize = this.value + 'em';
+
+                    // Update layout based on new font and line sizes
+                    chart.isDirtyLegend = true;
+                    chart.redraw(false);
+                });
+            </script>
+        </div>
+    </div>
+
+    <div id="step-7" class="step" data-x="1000" data-y="35" data-z="100" >
+        <h6>DAMA: Data Management Association Internacional</h6>
+        <ul>
+            <li>Inicio em 1980: Los Angeles<br>1988 primeiros diretores foram eleitos</li>
+            <li>Desde 1989 realiza anualmente sua conferência</li>
+        </ul>
+        <small><a href="https://www.dama-belux.org/news/history-of-dama-international/">Fonte: DAMA- Belux</a> </small>
+    </div>
+
+    <div id="step-8" class="step" data-x="-600" data-y="-400" data-z="-400" >
+        <h1>DAMA Brasil</h1>
+        <p>Guia DAMA-DMBok em Português</p>
+    </div>
+
+    <div id="step-9" class="step" data-x="-1550" data-y="-450" data-z="-100" >
+        <h3>Engenheiro de Dados</h3>
+        <ul>
+            <li>Coleta</li>
+            <li>Extração</li>
+            <li>Tratamento</li>
+            <li>Ingestão</li>
+        </ul>
+
+    </div>
+
+    <div id="step-10" class="step" data-x="-1250" data-y="95" data-z="-800" >
+        <h3>Cientista de Dados</h3>
+        <ul>
+            <li>Extração de Conhecimento</li>
+            <li>Tomada de Decisões</li>
+            <li>Gerar Inteligência</li>
+            <li>Apresentação dos Resultados</li>
+        </ul>
+    </div>
+
+    <div id="step-11" class="step" data-x="1700" data-y="600" data-z="-700" data-rotate-order="zyx">
+        <h3>Governança de Dados</h3>
+    </div>
+
+    <div id="step-12" class="step" data-x="-1000" data-y="-1090" data-z="-800" data-rotate-order="zyx">
+        <p>Slide 12</p>
+    </div>
+
+    <div id="step-13" class="step" data-x="-200" data-y="1440" data-z="-790" >
+        <p>Slide 13</p>
+    </div>
+
+    <div id="step-14" class="step" data-x="460" data-y="740" data-z="-200" data-rotate-order="zyx">
+        <p>Slide 14</p>
+    </div>
+
+    <div id="step-15" class="step" data-x="50" data-y="40" data-z="-400" data-rotate-y="75">
+        <p>Slide 15</p>
+    </div>
+
+    <div id="step-16" class="step" data-x="1100" data-y="1200" data-z="-400" data-rotate-order="zyx">
+        <a href="http://carolinedantas.com">Meu site: carolinedantas.com</a>
+        <p>@_caadds</p>
+        <p>dantascaroline@outlook.com</p>
+    </div>
+
+
+</div>
+
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
+
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
